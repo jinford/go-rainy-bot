@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/go-rainy-bot', '-f', 'build/go-rainy-bot/Dockerfile', '.' ]
+images:
+- 'gcr.io/$PROJECT_ID/go-rainy-bot'
